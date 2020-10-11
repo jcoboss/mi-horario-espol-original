@@ -1,0 +1,336 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/02/2019, 07:57:23 PM
+    Author     : Josue
+*/
+
+*{
+  color-fondo-centro: #2b2b2b;
+    color-fondo-top: #3c3f41;
+    color-fuente: #a9b7c6;
+    color-borde: #292b2d;
+    color-scroll-bar: #565656 ;
+    color-button-background: #000000;
+    custom-font-size: 11;
+}
+.progress-bar{
+    -fx-indeterminate-bar-flip:false;
+    -fx-indeterminate-bar-length: 2000px ;
+    -fx-indeterminate-bar-escape: false;
+    -fx-indeterminate-bar-animation-time:12 ;
+}
+
+.progress-bar > .bar {
+    
+    -fx-background-color: linear-gradient(
+        from 0px .75em to .75em 0px,
+        repeat,
+        #686f7a 0%,
+        #686f7a 45%,
+        derive(#686f7a, 30%) 50%,
+        derive(#686f7a, 30%) 99%
+    );
+    -fx-border-radius: 10px;
+}
+
+.progress-bar .track{
+     -fx-background-color: transparent;
+     -fx-border-radius: 10px;
+     -fx-border-color:grey;
+}
+
+.button{
+    -fx-border-color: #292b2d;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#2b2b2b ;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; /* 12 */
+    -fx-text-fill: #a9b7c6;
+}
+
+.button:hover {
+    
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#00ccff;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; 
+    
+    -fx-text-fill: #333333;
+    
+    
+}
+
+.button:pressed {
+    -fx-border-color: #2b2b2b;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#2b2b2b ;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; 
+    -fx-text-fill: #a9b7c6;
+}
+.border-pane{
+    -fx-background-color:#3c3f41 ;
+    
+    
+}
+.root{
+    -fx-background-color:#3c3f41 ;
+}
+
+/*Personalizando el menu y todos sus componentes*/
+.menu-bar{
+    -fx-background-color: #3c3f41;
+    
+}
+
+.menu-bar .menu{
+    -fx-background-color: #3c3f41;
+}
+
+.menu-bar .menu:showing{
+    -fx-background-color: #2b2b2b;
+}
+
+.menu-bar .menu .label{
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; 
+    -fx-text-fill: #a9b7c6;
+}
+
+.menu-bar .menu .label:hover{
+    -fx-text-fill: #00ccff;
+}
+.menu-bar .menu .menu-item{
+    -fx-background-color: #2b2b2b;
+}
+.menu-bar .menu .menu-item:hover{
+    -fx-border-color: #00ccff;
+}
+.menu-bar .menu .menu-item .label{
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; 
+    -fx-text-fill: #a9b7c6;
+}
+
+
+/*Personalizando el menu de contexto del menu principal*/
+.context-menu{
+    -fx-background-color: #2b2b2b;
+}
+.context-menu:hover{}
+
+.label{
+    -fx-alignment: baseline-center;
+    -fx-text-alignment: center ;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12;
+    -fx-text-fill: #a9b7c6;
+}
+
+.vbox{
+    -fx-background-color: #3c3f41;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; /* 12 */
+    -fx-text-fill: #a9b7c6;
+    -fx-border-width: 2;
+    -fx-border-color: #292b2d;
+}
+
+.text-area .scroll-pane{
+    -fx-base: #3c3f41;
+}
+
+.text-area .label{
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; /* 12 */
+    -fx-text-fill: #a9b7c6;
+}
+
+.panel{
+    -fx-alignment: CENTER;
+    -fx-background-color: #3c3f41;
+}
+
+.tarjeta{
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; /* 12 */
+    -fx-text-fill: #a9b7c6;
+}
+
+.tab-pane .tab-header-area .headers-region{
+    -fx-background-color: #333333;
+    
+}
+
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: #333333;
+    
+}
+.tab-pane {
+    -fx-border-width: 2;
+    -fx-border-color: #292b2d;
+}
+.tab-pane .tab  {
+    -fx-background-radius: 0;
+    -fx-background-color:#2b2b2b ;
+}
+.tab-pane .tab:selected {
+    -fx-border-color: #00ccff;
+}
+
+.tab-pane .tab .tab-label:hover {
+    -fx-text-fill:#00ccff ;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 12; /* 12 */
+    -fx-text-fill: #a9b7c6;
+}
+
+.scroll-pane {
+    -fx-base: #000000;
+    -fx-background-color: transparent;
+     -fx-border-width: 2;
+    -fx-border-color: #292b2d;
+    
+}
+
+.scroll-pane .corner{
+     -fx-background-color: transparent;
+     
+}
+
+.scroll-bar .track {
+    -fx-background-color: #3c3f41;
+    
+}
+
+.scroll-bar .thumb {
+    -fx-background-radius: 5;
+    -fx-background-color: #565656;
+    -fx-border-width: 8;
+    -fx-background-insets: 2,0,0;
+}
+
+.scroll-bar .decrement-button,.scroll-bar .increment-button {
+    -fx-background-color: #3c3f41;
+    -fx-background-insets: 0,10,0,0;
+}
+
+.scroll-bar .increment-button increment-arrow,
+.scroll-bar .decrement-button decrement-arrow{
+    -fx-background-color: transparent;
+    -fx-padding: -2;
+}
+
+
+.separator .line{
+    -fx-border-color: #292b2d;
+}
+
+.table-view {
+    -fx-base: #302b2b;
+    -fx-control-inner-background: #333333;
+    -fx-table-cell-border-color: #a9b7c6;
+    -fx-table-header-border-color: #a9b7c6;
+    
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #333333;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header .label {
+    -fx-background-color: transparent;
+    -fx-font-size: 12;
+    -fx-font-family: "Arial";
+    -fx-font-width: bold;
+    -fx-text-fill: #a9b7c6;
+    -fx-alignment: center;
+}
+.table-view .table-cell{
+    -fx-font-size: 12;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #a9b7c6;
+    -fx-alignment: center;
+    
+}
+
+.dialog-pane{
+  -fx-border-color:#3c3f41;
+  
+ }
+
+/**Costumization of The Bar where the buttons are located-fx-border-width:2.0px;**/
+.dialog-pane > .button-bar > .container {
+  -fx-background-color:#3c3f41;
+}
+/*-fx-padding: 0.5em 0.5em 0.5em 0.5em;*/
+.dialog-pane > .content.label {
+   
+   -fx-background-color: #3c3f41;
+   -fx-font-family:"Arial";
+   -fx-text-fill:#a9b7c6;
+    -fx-font-weight:bold; 
+   -fx-font-size:12;
+}
+
+.dialog-pane .separator{
+    -fx-border-color: #292b2d;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+  -fx-background-color: #3c3f41;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-background-color: #3c3f41;
+   -fx-font-family:"Arial";
+   -fx-text-fill:#a9b7c6;
+    -fx-font-weight:bold; 
+   -fx-font-size:17;
+}
+.dialog-pane .panel .label{
+    -fx-background-color: #3c3f41;
+   -fx-font-family:"Arial";
+   -fx-text-fill:#a9b7c6;
+    -fx-font-weight:bold; 
+   -fx-font-size:17;
+}
+/**Costumization of Buttons**/
+/*-fx-wrap-text: true;
+   -fx-effect: dropshadow( three-pass-box, yellow, 10.0, 0.0, 0.0, 0.0);
+   -fx-cursor:hand;*/
+.dialog-pane .button{
+   -fx-background-color:#2b2b2b;
+   -fx-text-fill:#a9b7c6;
+   -fx-font-size: 12; 
+    -fx-background-radius: 0;
+    
+    -fx-font-family: "Arial";
+ }
+ .dialog-pane .button:focus{
+   -fx-border-color: #00ccff;
+ }
+  .dialog-pane .button:hover{
+   -fx-background-color: #00ccff;
+    -fx-text-fill: #333333;
+ }
+/*
+.dialog-pane .button:hover{     
+  -fx-background-color:grey;
+  -fx-text-fill:blue;
+  -fx-font-weight:bold; 
+ }*/
